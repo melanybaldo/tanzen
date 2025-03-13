@@ -2,6 +2,6 @@
     padding: 2px;
 }
 
-.container {
-    background: rgb(255,0,90);
+body {
+    background: rgb(255,0,90) !important;
 }

@@ -4,7 +4,7 @@ body{
 
 @font-face {
     font-family: "CHICKEN PIE";
-    src: url(./Sources/CHICKEN\ Pie.otf);
+    src: url(../Sources/CHICKEN\ Pie.otf);
     font-weight: normal;
     font-style: normal;
 }

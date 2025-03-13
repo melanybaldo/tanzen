@@ -1,9 +1,10 @@
 *{
-    padding: 2px;
-    /* margin: 0% !important;  */
+    padding: 1px;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.container {
-    background: rgb(255,0,90);
+body {
+    background: rgb(255,0,90)!important;
 }
 
