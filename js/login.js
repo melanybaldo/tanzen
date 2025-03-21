@@ -4,8 +4,8 @@ fromRegistro.addEventListener("submit", (e) =>{
 
     e.preventDefault()
 
-    const nombre = document.getElementById("inputUserName").value
-    const contraseña = document.getElementById("inputUserPass").value
+    const nombre = document.getElementById("exampleInputName1").value
+    const contraseña = document.getElementById("exampleInputPassword1").value
 
     const Users = JSON.parse(localStorage.getItem("user")) || []
     const tex = Users.find(user => user.nombre  === nombre && user.contraseña === contraseña)

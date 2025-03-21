@@ -4,9 +4,9 @@ formRegistro.addEventListener("submit", function(re) {
 
     re.preventDefault();
 
-    const nombre = document.getElementById("nomb").value;
-    const email = document.getElementById("email").value;
-    const contraseña = document.getElementById("contrase").value;
+    const nombre = document.getElementById("exampleInputName1").value;
+    const email = document.getElementById("exampleInputEmail1").value;
+    const contraseña = document.getElementById("exampleInputPassword1").value;
 
     if (!nombre || !email || !contraseña) {
         return alert("Todos los campos son obligatorios");
