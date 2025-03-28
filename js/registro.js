@@ -17,7 +17,7 @@ formRegistro.addEventListener("submit", function(re) {
     }
 
     Users.push({
-        apodo: Pepe,
+        apodo: "pepe",
         nombre: nombre, 
         email: email, 
         contraseña: contraseña,
