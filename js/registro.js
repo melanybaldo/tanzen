@@ -10,6 +10,17 @@ formRegistro.addEventListener("submit", function(re) {
 
    
     const Users = JSON.parse(localStorage.getItem("user")) || [];
+
+    for (let i = 0; i < Users.length; i++) {
+       
+        if (Users[i].user === Users.user) {
+
+            alert("El usuario ya existe")
+            return
+        }
+        
+    }
+
     const regi = Users.find(user => user.nombre === nombre);
 
     if (regi) {

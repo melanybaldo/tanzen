@@ -11,3 +11,7 @@ body {
 .color {
     color: #fff !important;
 }
+
+.w-33 {
+    width: 33% !important;
+}
