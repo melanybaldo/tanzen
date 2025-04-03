@@ -2,11 +2,13 @@ const fromRegistro = document.querySelector("#fromRegistro")
 const nombre = document.getElementById("exampleInputName1")
 const contraseña = document.getElementById("exampleInputPassword1")
 
+const Users = JSON.parse(localStorage.getItem("user")) || []
+
 function validarUsuario (e) {
 
     e.preventDefault()
 
-    for (let i = 0; i < array.length; i++) {
+    for (let i = 0; i < Users.length; i++) {
        
         if (Users [i].user === nombre.value && Users[i].pass === contraseña.value) {
             console.log("Bienvenido")
@@ -16,9 +18,11 @@ function validarUsuario (e) {
         
     }
 
-    const Users = JSON.parse(localStorage.getItem("user")) || []
+   
     const tex = Users.find(user => user.nombre  === nombre && user.contraseña === contraseña)
 
-    window.location.href = "../Pages/index2.html"
+     window.location.href = "../Pages/index2.html";
 
 }
+
+fromRegistro.addEventListener("submit", validarUsuario)
