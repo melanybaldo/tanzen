@@ -6,6 +6,10 @@ body {
     background: rgb(255,0,90) !important;
 }
 
+a {
+    color: #fff !important;
+}
+
 .color {
     color: #ffff !important;
 }

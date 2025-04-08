@@ -8,6 +8,10 @@ body {
     background: rgb(255,0,90)!important;
 }
 
+a {
+    color: #fff !important;
+    /* font-size: 30px !important; */
+}
 .color {
     color: #fff !important;
 }
