@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "CHICKEN PIE";
+    src: url(../Sources/CHICKEN\ Pie.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    font-family: "CHICKEN PIE";
+    font-weight: normal;
+}
+
+.ico {
+    color:  rgb(255,0,90);
+}
+
+.cer {
+    margin: 0 0 0 10px;
+    color: black;
+    font-size: 19px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center
+}
+
+h3{
+    font-family: "CHICKEN PIE";
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card{
+    width: 100%;
+    height: 450px;
+}
+
+.gradient-card {
+    background: rgb(255,0,90);
+background: linear-gradient(180deg, rgba(255,0,90,1) 4%, rgba(233,101,175,1) 37%, rgba(150,35,251,1) 70%, rgba(87,41,90,1) 95%);
+}
+
+.c-black{
+    color: rgb(65, 64, 51);
+}
+
+.w-63{
+    width: 63% !important;
+}
+
+.w-33{
+    width: 36%;
+}
