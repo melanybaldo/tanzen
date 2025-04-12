@@ -1,0 +1,15 @@
+* {
+    margin: 30px;
+}
+
+@font-face {
+    font-family: "CHICKEN PIE";
+    src: url(../Sources/CHICKEN\ Pie.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    font-family: "CHICKEN PIE";
+    font-weight: normal;
+}
