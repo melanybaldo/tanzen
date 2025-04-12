@@ -12,6 +12,21 @@ body {
     font-size: 1.5rem;
 }
 
+.ico{
+    color: #e74c8a;
+}
+
+a {
+    text-decoration: none;
+}
+
+.encu {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 30px;
+}
+
 .w-15{
     width: 19% !important;
 }
