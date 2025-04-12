@@ -21,7 +21,7 @@ function validarUsuario (e) {
    
     const tex = Users.find(user => user.nombre  === nombre && user.contraseña === contraseña)
 
-     window.location.href = "../Pages/index2.html";
+     window.location.href = "../Pages/introduccion.html";
 
 }
 
