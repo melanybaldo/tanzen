@@ -54,26 +54,6 @@ background: linear-gradient(180deg, rgba(255,0,90,1) 4%, rgba(233,101,175,1) 37%
     width: 36%;
 }
 
-.fondo1{
-    background-image: url(../Sources/mancha1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.fondo2{
-    background-image: url(../Sources/mancha2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.fondo3{
-    background-image: url(../Sources/mancha3.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
 /* .gradient-card-img {
     background-image: url("../Pages/tarjeta degradado.png");
     background-size: cover;
