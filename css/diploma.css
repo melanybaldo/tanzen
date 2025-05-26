@@ -1,9 +1,40 @@
 body {
+     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
   margin: 0 !important;
   padding: 0 !important;
-  height: 100vh !important;
+  height: 90vh !important;
   background-image: url(../Sources/fondo\ 1-01.png);
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
+}
+
+@font-face {
+    font-family: "Simonetta";
+    src: url(../Sources/Simonetta-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    font-family: "Simonetta";
+    font-weight: normal;
+}
+
+h2{
+    font-family: "Simonetta";
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Simonetta";
+    src: url(../Sources/Simonetta-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
 }
