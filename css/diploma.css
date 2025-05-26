@@ -1,0 +1,9 @@
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100vh !important;
+  background-image: url(../Sources/fondo\ 1-01.png);
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
