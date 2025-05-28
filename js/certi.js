@@ -19,7 +19,6 @@
   nombreInput.addEventListener("input", actualizarNombre);
 
   document.getElementById("btnDescargar").addEventListener("click", function () {
-    // Actualiza nombre y fecha justo antes de descargar
     actualizarNombre();
     fechaTexto.textContent = formatearFechaHoy();
 
@@ -36,7 +35,5 @@
 
     html2pdf().set(opt).from(element).save();
   });
-
-  // Inicializar con valores por defecto
   actualizarNombre();
   fechaTexto.textContent = "[Fecha]";
