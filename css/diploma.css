@@ -2,12 +2,14 @@
       padding: 30px;
     }
 
+    .obj {
+      justify-content: flex-end;
+      
+    }
+
     .certificado {
-      background-image: url(../Sources/fondo\ 1-01.png) !important;
-      background-repeat: no-repeat !important;
-    /*   width: 1000px; */
-    /*   max-width: 100%; */
-    width: 100%;
+      width: 1000px;
+      max-width: 100%;
       padding: 50px;
       margin-top: 30px;
     }
@@ -15,7 +17,7 @@
     .firma {
       border-top: 2px solid #ccc;
       width: 200px;
-      margin: 10px auto 0;
+      margin: 10px auto 0 ;
       font-size: 0.9rem;
       text-align: center;
     }
