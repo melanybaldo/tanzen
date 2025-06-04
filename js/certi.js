@@ -11,11 +11,6 @@
     });
   }
 
-  function actualizarNombre() {
-    const nombre = nombreInput.value.trim() || "[Nombre del Alumno]";
-    nombreTexto.textContent = nombre;
-  }
-
   nombreInput.addEventListener("input", actualizarNombre);
 
   document.getElementById("btnDescargar").addEventListener("click", function () {
