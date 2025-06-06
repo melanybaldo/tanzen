@@ -10,7 +10,7 @@ body{
 }
 
 .w-67 {
-    width: 66%;
+    width: 33%;
 }
 
 h1{
@@ -24,11 +24,11 @@ h3{
 }
 
 .w-46 {
-    width: 45%;
+    width: 22%;
 }
 
 .w-44 {
-    width: 44%;
+    width: 22%;
 }
 
 @font-face {
