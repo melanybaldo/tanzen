@@ -9,6 +9,10 @@ body{
     font-style: normal;
 }
 
+.w-14 {
+    width: 13% !important;
+}
+
 .w-67 {
     width: 33%;
 }
