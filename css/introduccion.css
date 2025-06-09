@@ -2,6 +2,10 @@
     margin: 30px;
 }
 
+body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
 @font-face {
     font-family: "CHICKEN PIE";
     src: url(../Sources/CHICKEN\ Pie.otf);

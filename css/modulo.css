@@ -5,6 +5,10 @@
     font-style: normal;
 }
 
+body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
 h1{
     font-family: "CHICKEN PIE";
     font-weight: normal;
