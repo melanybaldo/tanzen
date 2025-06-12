@@ -2,7 +2,7 @@ document.getElementById("examen").addEventListener("submit", function(event) {
       event.preventDefault();
 
       const respuestasCorrectas = {
-        p1: "1000",
+        p1: "Kenneth H. Cooper",
         p2: "madrid",
         // Asegúrate de añadir las otras respuestas correctas aquí
         p10: "8"
