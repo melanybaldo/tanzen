@@ -15,7 +15,7 @@ body {
     color: #fff;
   }
 
-  .avatar {
+/*   .avatar {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -28,7 +28,7 @@ body {
     top: -50px;
     right: -60px;
     box-shadow: 4px 4px 0px #3d3d3d;
-  }
+  } */
 
   .modulo-card {
     background-color: white;
