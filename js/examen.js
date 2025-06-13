@@ -85,15 +85,41 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Mostrar alert personalizado
         if (Object.keys(erroresPorModulo).length === 0) {
-            alert("¡Felicidades! No necesitas reforzar ningún módulo.");
-             window.location.href = "../Pages/diploma.html";
+
+            // Busca el modal en el DOM
+            const modalElement = document.getElementById('miModal');
+
+            // Crea una instancia del modal de Bootstrap
+            const modalBootstrap = new bootstrap.Modal(modalElement);
+
+            // Muestra el modal
+            modalBootstrap.show();
+
+
+            //alert("¡Felicidades! No necesitas reforzar ningún módulo.");
+            //window.location.href = "../Pages/diploma.html";
         } else {
-            let mensaje = "Debes reforzar los siguientes módulos:\n";
-             window.location.href = "../Pages/modulo.html";
+            let mensaje = "Debes reforzar los siguientes módulos:\n<br>";
+            //window.location.href = "../Pages/modulo.html";
             for (const modulo in erroresPorModulo) {
-                mensaje += `- Módulo ${modulo} (${erroresPorModulo[modulo]} error(es))\n`;
+                mensaje += `- Módulo ${modulo} (${erroresPorModulo[modulo]} error(es))\n<br>`;
             }
-            alert(mensaje);
+            //alert(mensaje);
+
+            // Busca el modal en el DOM
+            const modalElement = document.getElementById('miModalLost');
+            const mensajePerdido = document.getElementById('mensajePerdido');
+
+            // Crea una instancia del modal de Bootstrap
+            const modalBootstrap = new bootstrap.Modal(modalElement);
+
+            mensajePerdido.innerHTML = mensaje
+
+            // Muestra el modal
+            modalBootstrap.show();
+
+
+
         }
     };
 });

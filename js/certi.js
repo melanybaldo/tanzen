@@ -1,3 +1,6 @@
+ 
+ 
+ 
  const nombreInput = document.getElementById("nombreAlumno");
   const nombreTexto = document.getElementById("nombreGenerado");
   const fechaTexto = document.getElementById("fechaGenerada");
@@ -12,6 +15,16 @@
   }
 
   const Users = JSON.parse(localStorage.getItem("user")) || []
+
+  const nombreGenerado = document.querySelector("#nombreGenerado")
+
+    for (let i = 0; i < Users.length; i++) {
+       
+        if (Users[i].logged) {
+            nombreGenerado.textContent = Users[i].nombre
+        }
+        
+    }
 
 
 /*   nombreInput.addEventListener("input", actualizarNombre);  */

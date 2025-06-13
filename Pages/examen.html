@@ -23,7 +23,7 @@
 
         
 
-        <div class="row">
+        <div class="row d-flex justify-content-center">
           <div class="col-12">
             <div id="questionCarousel" class="carousel slide" data-bs-interval="false">
                         <div class="carousel-inner">
@@ -256,6 +256,49 @@
     </div>
 
     </div>   
+
+
+
+<!-- Modal mensaje exito -->
+<div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="miModalLabel">Título del Modal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div id="mensajeGanado" class="modal-body">
+        ¡Felicidades! No necesitas reforzar ningún módulo.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">
+            <a class="text-decoration-none text-white" href="../Pages/diploma.html">volver2</a>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal examen perdido -->
+<div class="modal fade" id="miModalLost" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="miModalLabel">Mensaje de Tanzen</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div id="mensajePerdido" class="modal-body">
+        Este es el contenido del modal.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger me-auto" data-bs-dismiss="modal">
+            <a class="text-decoration-none text-white" href="../Pages/modulo.html">volver2</a>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
     
     <script src="../js/examen.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
