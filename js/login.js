@@ -1,4 +1,4 @@
-const fromRegistro = document.querySelector("#fromRegistro") 
+/* const fromRegistro = document.querySelector("#fromRegistro") 
 const nombre = document.getElementById("exampleInputName1")
 const contraseña = document.getElementById("exampleInputPassword1")
 
@@ -28,12 +28,12 @@ function validarUsuario (e) {
         }
         
     }
-
+ */
    
     //const tex = Users.find(user => user.nombre  === nombre && user.contraseña === contraseña)
 
      
 
-}
+/* }
 
-fromRegistro.addEventListener("submit", validarUsuario)
+fromRegistro.addEventListener("submit", validarUsuario) */
