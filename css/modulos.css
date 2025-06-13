@@ -11,6 +11,10 @@ body {
     text-align: center;
 }
 
+.me-2 {
+    width: 100px;
+}
+
 .ico{
     color: #e74c8a;
 }

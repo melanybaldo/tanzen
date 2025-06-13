@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Examen final</title>
-    <link rel="stylesheet" href="../css/modulos.css">
+    <link rel="stylesheet" href="../css/examen.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
@@ -12,9 +12,10 @@
 
     <div class="container-fluid">
          <div class="d-flex justify-content-between p-3">
-            <div>
-                <a class="ico" href="../Pages/modulo.html"><i class="bi bi-arrow-bar-left fs-2"></i></a>
-            </div>    
+            <div class="text-center mb-3">
+                <strong>Tiempo restante:</strong> <span id="timer">6:00</span>
+            </div>
+   
             <div class="tex d-flex justify-content-center">
                 <button onclick="cambiarTema()" class="btn rounded-fill fs-5"><i id="dl-icon" class="bi bi-moon-fill"></i></button> 
             </div>
@@ -32,7 +33,7 @@
                                 <h5>1. ¿Quién fundó la danza aeróbica?</h5>
                               </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="q1" id="q1a1">
+                                    <input class="form-check-input" type="radio" name="q1" id="q1a">
                                     <label class="form-check-label" for="q1a1">Sydne Rome</label>
                                 </div>
                                 <div class="form-check">
@@ -40,8 +41,8 @@
                                     <label class="form-check-label" for="q1a2">Kenneth H. Cooper</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="q1" id="q1a1">
-                                    <label class="form-check-label" for="q1a2">Jane fonda´s</label>
+                                    <input class="form-check-input" type="radio" name="q1" id="q1a">
+                                    <label class="form-check-label" for="q1a">Jane fonda´s</label>
                                 </div>
                                 <div class="mt-3">
                                     <button class="btn btn-primary" data-bs-target="#questionCarousel" data-bs-slide="next">Siguiente</button>
@@ -62,7 +63,7 @@
                                 </div>
 
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="q2" id="q2a2">
+                                    <input class="form-check-input" type="radio" name="q2" id="q2a3">
                                     <label class="form-check-label" for="q2a2">1973</label>
                                 </div>
                             
@@ -72,7 +73,7 @@
                                 </div>
                             </div>
                             
-                            <!-- Pregunta 3 -->
+                            
                             <div class="carousel-item">
                                 <h5>3. ¿Con qué fin se originó la danza aeróbica?</h5>
                                 <div class="form-check">
@@ -84,7 +85,7 @@
                                     <label class="form-check-label" for="q3a2"> Mejorar la condición física de manera divertida y dinámica.</label>
                                 </div>
                                   <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="q3" id="q3a2">
+                                    <input class="form-check-input" type="radio" name="q3" id="q3a3">
                                     <label class="form-check-label" for="q3a2"> Con el objetivo de combinar salud, ejercicio y entretenimiento, motivando a más personas a mantenerse activas.</label>
                                 </div>
                                 <div class="mt-3">
@@ -93,7 +94,7 @@
                                 </div>
                             </div>
                             
-                            <!-- Pregunta 4 -->
+                        
                             <div class="carousel-item">
                                 <h5>4. ¿Que géneros musicales se utilizaron en el modulo 2?</h5>
                                 <div class="form-check">
@@ -105,8 +106,8 @@
                                     <label class="form-check-label" for="q4a2">Salsa y merengue</label>
                                 </div>
                                  <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="q4" id="q4a2">
-                                    <label class="form-check-label" for="q4a2">Salsa y Rumba</label>
+                                    <input class="form-check-input" type="radio" name="q4" id="q4a3">
+                                    <label class="form-check-label" for="q4a3">Salsa y Rumba</label>
                                 </div>
                                 <div class="mt-3">
                                     <button class="btn btn-secondary" data-bs-target="#questionCarousel" data-bs-slide="prev">Anterior</button>
@@ -114,7 +115,7 @@
                                 </div>
                             </div>
                             
-                            <!-- Pregunta 5 -->
+                            
                             <div class="carousel-item">
                                 <h5>5. ¿Que géneros musicales se utilizaron en el modulo 3?</h5>
                                 <div class="form-check">
@@ -126,7 +127,7 @@
                                     <label class="form-check-label" for="q5a2">Salsa y rumba</label>
                                 </div>
                                  <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="q5" id="q5a2">
+                                    <input class="form-check-input" type="radio" name="q5" id="q5a3">
                                     <label class="form-check-label" for="q5a2">Bachata y reggaeton</label>
                                 </div>
                                 <div class="mt-3">
@@ -139,15 +140,15 @@
                             <div class="carousel-item">
                                 <h5>6. ¿Por que crees que la danza aeróbica es  accesible para tu vida? </h5>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="q4" id="q4a1">
+                                    <input class="form-check-input" type="radio" name="q6" id="q6a1">
                                     <label class="form-check-label" for="q4a1">Mejora el ámbito de hacer actividad física.</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="q4" id="q4a2">
+                                    <input class="form-check-input" type="radio" name="q6" id="q6a2">
                                     <label class="form-check-label" for="q4a2">Tiene componentes que ayuda a mejorara obtener una vida saludable</label>
                                 </div>
                                  <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="q4" id="q4a2">
+                                    <input class="form-check-input" type="radio" name="q6" id="q6a3">
                                     <label class="form-check-label" for="q4a2">Mejora el movimiento físico y cardiovascular.</label>
                                 </div>
                                 <div class="mt-3">
@@ -160,19 +161,19 @@
                             <div class="carousel-item">
                                 <h5>7. ¿Qué género musical te resulta más atractivo para bailar en una clase de danza aeróbica?</h5>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="q4" id="q4a1">
+                                    <input class="form-check-input" type="radio" name="q7" id="q7a1">
                                     <label class="form-check-label" for="q4a1">Bachata</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="q4" id="q4a2">
+                                    <input class="form-check-input" type="radio" name="q7" id="q7a2">
                                     <label class="form-check-label" for="q4a2">Merengue</label>
                                 </div>
                                  <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="q4" id="q4a2">
+                                    <input class="form-check-input" type="radio" name="q7" id="q7a3">
                                     <label class="form-check-label" for="q4a2">Rumba</label>
                                 </div>
                                  <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="q4" id="q4a2">
+                                    <input class="form-check-input" type="radio" name="q7" id="q7a4">
                                     <label class="form-check-label" for="q4a2">Salsa</label>
                                 </div>
                                 <div class="mt-3">
@@ -185,16 +186,16 @@
                              <div class="carousel-item">
                                 <h5>8. ¿Como se llama la instructora del módulo 2 en el que participaste?</h5>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="q4" id="q4a1">
+                                    <input class="form-check-input" type="radio" name="q8" id="q8a1">
                                     <label class="form-check-label" for="q4a1">Sofia</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="q4" id="q4a2">
+                                    <input class="form-check-input" type="radio" name="q8" id="q8a2">
                                     <label class="form-check-label" for="q4a2">Mila</label>
                                 </div>
                                  <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="q4" id="q4a2">
-                                    <label class="form-check-label" for="q4a2">Diana</label>
+                                    <input class="form-check-input" type="radio" name="q8" id="q8a3">
+                                    <label class="form-check-label" for="q4a3">Diana</label>
                                 </div>
                                 <div class="mt-3">
                                     <button class="btn btn-secondary" data-bs-target="#questionCarousel" data-bs-slide="prev">Anterior</button>
@@ -206,15 +207,15 @@
                              <div class="carousel-item">
                                 <h5>9. ¿Como se llama la instructora del módulo 3 en el que participaste?</h5>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="q4" id="q4a1">
-                                    <label class="form-check-label" for="q4a1">Shopie</label>
+                                    <input class="form-check-input" type="radio" name="q9" id="q9a1">
+                                    <label class="form-check-label" for="q9a1">Shopie</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="q4" id="q4a2">
-                                    <label class="form-check-label" for="q4a2">Carla</label>
+                                    <input class="form-check-input" type="radio" name="q9" id="q9a2">
+                                    <label class="form-check-label" for="q9a2">Carla</label>
                                 </div>
                                  <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="q4" id="q4a2">
+                                    <input class="form-check-input" type="radio" name="q9" id="q9a3">
                                     <label class="form-check-label" for="q4a2">Luna</label>
                                 </div>
                                 <div class="mt-3">
@@ -228,20 +229,20 @@
                             <div class="carousel-item">
                                 <h5>10. ¿En el ámbito de la danza aeróbica que  ayudado a reducir el estrés?</h5>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="q4" id="q4a1">
+                                    <input class="form-check-input" type="radio" name="q10" id="q10a1">
                                     <label class="form-check-label" for="q4a1">Liberación de endorfinas</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="q4" id="q4a2">
+                                    <input class="form-check-input" type="radio" name="q10" id="q10a2">
                                     <label class="form-check-label" for="q4a2">La música como elemento terapéutico</label>
                                 </div>
                                  <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="q4" id="q4a2">
+                                    <input class="form-check-input" type="radio" name="q10" id="q10a2">
                                     <label class="form-check-label" for="q4a2">Mejora de la autoestima y la imagen corporal</label>
                                 </div>
                                 <div class="mt-3">
                                     <button class="btn btn-secondary" data-bs-target="#questionCarousel" data-bs-slide="prev">Anterior</button>
-                                   <a href="./diploma.html"><button class="btn btn-success"  type="submit">Enviar formulario</button></a>
+                                   <button class="btn btn-success mt-3" onclick="evaluarRespuestas()">Finalizar Examen</button>
                                 </div>
                             </div>
 

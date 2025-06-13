@@ -1,37 +1,99 @@
-document.getElementById("examen").addEventListener("submit", function(event) {
-      event.preventDefault();
+const temaOscuro = () => {
+    document.querySelector("body").setAttribute("data-bs-theme", "dark");
+    document.querySelector("#dl-icon").setAttribute("class", "bi bi-sun-fill");
+    localStorage.setItem("tema", "dark");
+}
 
-      const respuestasCorrectas = {
-        p1: "Kenneth H. Cooper",
-        p2: "madrid",
-        // Asegúrate de añadir las otras respuestas correctas aquí
-        p10: "8"
-      };
+const temaClaro = () => {
+    document.querySelector("body").setAttribute("data-bs-theme", "light");
+    document.querySelector("#dl-icon").setAttribute("class", "bi bi-moon-fill");
+    localStorage.setItem("tema", "light");
+}
 
-      let puntaje = 0;
+const cambiarTema = () => {
+    const temaActual = document.querySelector("body").getAttribute("data-bs-theme");
+    temaActual === "light" ? temaOscuro() : temaClaro();
+}
 
-      for (let pregunta in respuestasCorrectas) {
-        const contenedor = document.querySelector(`input[name="${pregunta}"]`).closest(".pregunta");
-        const seleccionada = document.querySelector(`input[name="${pregunta}"]:checked`);
-        const correcta = respuestasCorrectas[pregunta];
+window.addEventListener("DOMContentLoaded", () => {
+    const temaGuardado = localStorage.getItem("tema");
 
-        // Limpia respuestas anteriores si el usuario reintenta
-        let anterior = contenedor.querySelector(".respuesta-correcta");
-        if (anterior) anterior.remove();
+    if (temaGuardado === "dark") {
+        temaOscuro();
+    } else {
+        temaClaro();
+    }
+});
 
-        let mensaje = document.createElement("div");
-        mensaje.classList.add("respuesta-correcta");
+//Modo oscuro y claro (arriba)
 
-        if (seleccionada && seleccionada.value.toLowerCase() === correcta) {
-          puntaje++;
-          mensaje.innerHTML = `<span class="correcta">✔ Correcto</span>`;
+//Examen y tiempo
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Temporizador
+    let tiempo = 6 * 60; // 6 minutos en segundos
+    const intervalo = setInterval(() => {
+        if (tiempo <= 0) {
+            clearInterval(intervalo);
+            alert("¡Tiempo terminado! El examen ha finalizado.");
+            evaluarRespuestas();
         } else {
-          mensaje.innerHTML = `<span class="incorrecta">✘ Incorrecto</span>. La respuesta correcta es: <strong class="correcta">${correcta}</strong>`;
+            tiempo--;
+            // Opcional: mostrar el temporizador en pantalla
+            const minutos = Math.floor(tiempo / 60);
+            const segundos = tiempo % 60;
+            document.getElementById('timer').textContent = `${minutos}:${segundos.toString().padStart(2, '0')}`;
+        }
+    }, 1000);
+
+    // Respuestas correctas por nombre de input
+    const respuestasCorrectas = {
+        q1: 'q1a2', // Kenneth H. Cooper
+        q2: 'q2a1', // 1968
+        q3: 'q3a1', // Primera opción
+        q4: 'q4a3', // Salsa y Rumba
+        q5: 'q5a1', // Bachata y merengue 
+        q8: 'q8a2', // Mila
+        q9: 'q9a1', // Shopie
+    };
+
+    // Relación pregunta - módulo
+    const preguntaModulo = {
+        q1: 1,
+        q2: 1,
+        q3: 1,
+        q4: 2,
+        q5: 3,
+        q8: 2,
+        q9: 3
+    };
+
+    // Evaluar cuando el usuario termine (puedes poner esto en un botón "Finalizar Examen")
+    window.evaluarRespuestas = function () {
+        const erroresPorModulo = {};
+
+        for (const [pregunta, respuestaCorrecta] of Object.entries(respuestasCorrectas)) {
+            const seleccionada = document.querySelector(`input[name="${pregunta}"]:checked`);
+            if (!seleccionada || seleccionada.id !== respuestaCorrecta) {
+                const modulo = preguntaModulo[pregunta];
+                erroresPorModulo[modulo] = (erroresPorModulo[modulo] || 0) + 1;
+            }
         }
 
-        contenedor.appendChild(mensaje);
-      }
+        // Guardar en localStorage
+        localStorage.setItem('modulos_con_errores', JSON.stringify(erroresPorModulo));
 
-      const aprobado = puntaje >= 7;
-      alert(`Tu puntaje fue de ${puntaje}/10. ${aprobado ? "¡Felicidades! Aprobaste." : "Lo siento, no aprobaste."}`);
-    });
+        // Mostrar alert personalizado
+        if (Object.keys(erroresPorModulo).length === 0) {
+            alert("¡Felicidades! No necesitas reforzar ningún módulo.");
+             window.location.href = "../Pages/diploma.html";
+        } else {
+            let mensaje = "Debes reforzar los siguientes módulos:\n";
+             window.location.href = "../Pages/modulo.html";
+            for (const modulo in erroresPorModulo) {
+                mensaje += `- Módulo ${modulo} (${erroresPorModulo[modulo]} error(es))\n`;
+            }
+            alert(mensaje);
+        }
+    };
+});
