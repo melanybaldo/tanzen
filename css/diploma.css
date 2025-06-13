@@ -1,4 +1,140 @@
-  body {
+#nombreInput {
+  max-width: 400px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+#certificado {
+  position: relative;
+  border: 4px solid #6f48ff;
+  padding: 60px 30px;
+  background-color: white;
+  overflow: hidden;
+}
+
+/* Contenedor de las imágenes */
+.decoraciones {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Estilo base de cada esquina */
+.decor {
+  position: absolute;
+  width: 130px;
+  height: auto;
+  z-index: 0;
+}
+
+/* Esquinas específicas */
+.sup-izq {
+  top: -30px;
+  left: -30px;
+  transform: rotate(0deg);
+}
+
+.sup-der {
+  top: -30px;
+  right: -30px;
+  transform: rotate(90deg);
+}
+
+.inf-izq {
+  bottom: -30px;
+  left: -30px;
+  transform: rotate(-90deg);
+}
+
+.inf-der {
+  bottom: -30px;
+  right: -30px;
+  transform: rotate(180deg);
+}
+
+#certificado {
+  border: 4px solid #3d3dff;
+  background: #fff;
+  position: relative;
+  font-family: 'Georgia', serif;
+  color: #0d014f;
+}
+
+.titulo-secundario {
+  color: #0057a3;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.titulo-principal {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.descripcion {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.nombre {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.fecha {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.firma {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 1.2rem;
+}
+
+.firma small {
+  font-family: 'Georgia', serif;
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.medalla {
+  width: 80px;
+}
+
+.esquinas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.esquina {
+  position: absolute;
+  width: 100px;
+  height: auto;
+}
+
+.esquina-izq {
+  top: -20px;
+  left: -20px;
+  transform: rotate(0deg);
+}
+
+.esquina-der {
+  bottom: -20px;
+  right: -20px;
+  transform: rotate(180deg);
+}
+
+
+/* body {
       padding: 30px;
     }
 
@@ -55,4 +191,4 @@ h2{
     src: url(../Sources/Simonetta-Regular.otf);
     font-weight: normal;
     font-style: normal;
-}
+} */

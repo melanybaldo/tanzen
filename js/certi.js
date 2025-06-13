@@ -1,4 +1,10 @@
- 
+  const inputNombre = document.getElementById('nombreInput');
+  const nombreGenerado = document.getElementById('nombreGenerado');
+
+  inputNombre.addEventListener('input', () => {
+    const valor = inputNombre.value.trim();
+    nombreGenerado.textContent = valor || '[Nombre del Alumno]';
+  }); 
  
  
  const nombreInput = document.getElementById("nombreAlumno");
@@ -14,7 +20,7 @@
     });
   }
 
-  const Users = JSON.parse(localStorage.getItem("user")) || []
+ /*  const Users = JSON.parse(localStorage.getItem("user")) || []
 
   const nombreGenerado = document.querySelector("#nombreGenerado")
 
@@ -24,7 +30,7 @@
             nombreGenerado.textContent = Users[i].nombre
         }
         
-    }
+    } */
 
 
 /*   nombreInput.addEventListener("input", actualizarNombre);  */

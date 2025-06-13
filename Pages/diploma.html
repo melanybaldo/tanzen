@@ -11,7 +11,54 @@
 
 <body>
 
-  <div id="certificado" class="container certificado text-center">
+   <div class="container text-center mb-4">
+  <label for="nombreInput" class="form-label fw-bold">Escribe tu nombre:</label>
+  <input type="text" id="nombreInput" class="form-control text-center" placeholder="Tu nombre completo">
+
+
+  <div id="certificado" class="container certificado text-center py-5 px-4">
+
+  <div class="mb-4">
+    <img src="../Sources/Logo (1).png" alt="logo" style="height: 60px;">
+  </div>
+
+
+  <h2 class="titulo-secundario">CERTIFICADO DE</h2>
+  <h1 class="titulo-principal">RECONOCIMIENTO</h1>
+  <img src="../Sources/Recurso 3.png" alt="">
+
+  <!-- Descripción -->
+  <p class="descripcion">
+    Por su notable desempeño en el curso <strong>TANZEN</strong> de Danza aeróbica se le<br>
+    hace entrega de este diploma a:
+  </p>
+
+  <!-- Nombre del alumno -->
+  <h3 class="nombre" id="nombreGenerado">[Nombre del Alumno]</h3>
+
+  <p class="fecha" id="fechaGenerada">[Fecha]</p>
+
+  <!-- Firmas y medalla -->
+  <div class="row justify-content-around firmas align-items-center">
+    <div class="col-md-3 firma">
+      María Paula Z<br><small>Director</small>
+    </div>
+    <div class="col-md-3">
+      <img src="../Sources/Certificado Diploma de Reconocimiento Profesional Moderno Verde y Blanco (1).png" class="medalla" alt="medalla">
+    </div>
+    <div class="col-md-3 firma">
+      Melany Baldovino<br><small>Subdirector</small>
+    </div>
+  </div>
+</div>
+
+<!-- Botón -->
+<div class="container mt-4 text-center">
+  <button class="btn btn-success" id="btnDescargar">Descargar PDF</button>
+</div>
+
+
+  <!-- <div id="certificado" class="container certificado text-center">
 
     <div class="obj d-flex"><img src="../Sources/1x/Objeto1.png"></div>
 
@@ -50,7 +97,7 @@
 
   <div class="container mt-4 text-center">
     <button class="btn btn-success" id="btnDescargar">Descargar PDF</button>
-  </div>
+  </div> -->
 
   <script src="../js/certi.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
