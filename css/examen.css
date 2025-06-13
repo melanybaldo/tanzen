@@ -4,3 +4,14 @@
     color: rgb(255,0,90);
 }
 
+.btn-primary {
+    background-color: rgb(255,0,90) !important;
+    border:none !important;
+    color:aliceblue !important;
+}
+
+.btn-secondary {
+    color: aliceblue !important;
+    border:none !important;
+    background-color: rgb(246, 47, 117) !important;
+}

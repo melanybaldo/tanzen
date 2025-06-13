@@ -48,12 +48,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Respuestas correctas por nombre de input
     const respuestasCorrectas = {
-        q1: 'q1a2', // Kenneth H. Cooper
+        q1: 'q1a1', // Kenneth H. Cooper
         q2: 'q2a1', // 1968
         q3: 'q3a1', // Primera opción
-        q4: 'q4a3', // Salsa y Rumba
+        q4: 'q4a1', // Salsa y Rumba
         q5: 'q5a1', // Bachata y merengue 
-        q8: 'q8a2', // Mila
+        q8: 'q8a1', // Mila
         q9: 'q9a1', // Shopie
     };
 
